@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="새로운 모임 만들기"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="모임 이름을 정해주세요."
+        android:textColor="@color/button_inner"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_custom"
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:hint="모임 이름을 입력해주세요." />
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="모임 유형을 정하세요."
+        android:textColor="@color/button_inner"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext_custom"
+        android:id="@+id/group_Introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="간단하게 모임의 성격을 소개하는 말을 써주세요^^"/>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/CustomButton"
+            android:id="@+id/submit"
+            android:onClick="MakeNewGroup_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생성하기" />
+
+        <Button
+            style="@style/CustomButton"
+            android:id="@+id/back"
+            android:onClick="MakeNewGroup_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back" />
+
+    </LinearLayout>
+
+</LinearLayout>

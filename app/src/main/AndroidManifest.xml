@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ydk.ss55">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activity.MainActivity">
+
+        </activity>
+        <activity android:name=".activity.Sign_upActivity" />
+        <activity android:name=".activity.MakeNewGroupActivity" />
+        <activity android:name=".activity.StationActivity" />
+        <activity android:name=".activity.ClubStationActivity" />
+        <activity android:name=".activity.AttendDetailsActivity" />
+        <activity android:name=".activity.NoticeMakeActivity" />
+        <activity android:name=".activity.NoticeDetailsActivity" />
+        <activity android:name=".activity.KakaoPayReadyActivity" />
+        <activity android:name=".activity.CreditActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.LoginSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

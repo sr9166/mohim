@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".activity.MainActivity"
+    android:gravity="center">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/test"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/testbtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="전체 디비 조회"/>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+    <TextView
+        style="@style/CustomText"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="모이면 힘이된다" />
+
+    <TextView
+        style="@style/CustomText"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:text="모힘" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:background="@drawable/edittext_custom"
+            android:textColorHighlight="#ffffff"
+            android:gravity="center"
+            android:cursorVisible="false"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="ID"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:background="@drawable/edittext_custom"
+            android:gravity="center"
+            android:fontFamily="sans-serif-thin"
+            android:layout_width="wrap_content"
+            android:hint="Password"
+            android:cursorVisible="false"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login"
+            android:background="@drawable/button_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/button_inner"
+            android:textSize="12dp"
+            android:fontFamily="sans-serif-thin"
+            android:layout_weight="1"
+            android:onClick="MainAc"
+            android:text="로그인하기" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sign_up"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:background="@drawable/button_custom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MainAc"
+                android:text="회원가입" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:text="|  "/>
+
+            <Button
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:background="@drawable/button_custom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호를 잊어버리셨습니까?" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/creditButton"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:background="@drawable/button_custom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:layout_marginTop="100dp"
+            android:onClick="MainAc"/>
+
+    </LinearLayout>
+</LinearLayout>

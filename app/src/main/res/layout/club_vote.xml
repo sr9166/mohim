@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표 할 때마다 점수 획득, 경험치 획득, 돈 획득, 벌금 안잃기"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표 작성하기"/>
+    <Button
+        android:id="@+id/makeVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표 작성"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표 히스토리"/>
+</LinearLayout>
